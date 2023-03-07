@@ -25,13 +25,13 @@ const Menu = () => {
 };
 
 const Sign = () => {
-    return (
-        <div className="nav-bar__sign">
-          <button className="nav-bar__sign--in">Sign in</button>
-          <button className="nav-bar__sign--up">Sign up</button>
-        </div>
-    )
-}
+  return (
+    <div className="nav-bar__sign">
+      <button className="nav-bar__sign--in">Sign in</button>
+      <button className="nav-bar__sign--up">Sign up</button>
+    </div>
+  );
+};
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -48,21 +48,23 @@ const NavBar = () => {
         <div className="nav-bar__links-container">
           <Menu />
         </div>
-        <Sign />
-        <div className="nav-bar__menu">
-          {toggleMenu ? (
-            <RiCloseLine onClick={() => openMenu(false)} />
-          ) : (
-            <RiMenu3Line onClick={() => openMenu(true)} />
-          )}
-          {toggleMenu && (
-            <div className="nav-bar__menu-container scale-up-center">
-              <div className="nav-bar__menu-links">
-                <Menu />
+        <div className="nav-bar__btn-container">
+          <Sign />
+          <div className="nav-bar__menu">
+            {toggleMenu ? (
+              <RiCloseLine onClick={() => openMenu(false)} />
+            ) : (
+              <RiMenu3Line onClick={() => openMenu(true)} />
+            )}
+            {toggleMenu && (
+              <div className="nav-bar__menu-container scale-up-center">
+                <div className="nav-bar__menu-links">
+                  <Menu />
+                </div>
+                <Sign />
               </div>
-              <Sign />
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>
