@@ -48,24 +48,22 @@ const NavBar = () => {
         <div className="nav-bar__links-container">
           <Menu />
         </div>
-        <div className="nav-bar__btn-container">
-          <Sign />
-          <div className="nav-bar__menu">
-            {toggleMenu ? (
-              <RiCloseLine onClick={() => openMenu(false)} />
-            ) : (
-              <RiMenu3Line onClick={() => openMenu(true)} />
-            )}
-            {toggleMenu && (
-              <div className="nav-bar__menu-container scale-up-center">
-                <div className="nav-bar__menu-links">
-                  <Menu />
-                </div>
-                <Sign />
-              </div>
-            )}
+      </div>
+      <Sign />
+      <div className="nav-bar__menu">
+        {toggleMenu ? (
+          <RiCloseLine onClick={() => openMenu(false)} />
+        ) : (
+          <RiMenu3Line onClick={() => openMenu(true)} />
+        )}
+        {toggleMenu && (
+          <div className="nav-bar__menu-container scale-up-center">
+            <div className="nav-bar__menu-links">
+              <Menu />
+            </div>
+            <Sign />
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
