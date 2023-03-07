@@ -1,13 +1,21 @@
-import { NavBar, Article, CTA, Brand, Feature } from "../components";
+import {
+  Header,
+  Blog,
+  Features,
+  Footer,
+  Possibility,
+  WhatGPT3,
+} from "../containers";
 
 export const Home = () => {
   return (
     <>
-      <NavBar />
-      <Brand />
-      <Feature />
-      <Article />
-      <CTA />
+      <Header />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <Blog />
+      <Footer />
     </>
   );
 };
