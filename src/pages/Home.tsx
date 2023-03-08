@@ -1,5 +1,6 @@
 import {
   Header,
+  Brands,
   Blog,
   Features,
   Footer,
@@ -9,13 +10,14 @@ import {
 
 export const Home = () => {
   return (
-    <>
+    <div className="gradient__bg">
       <Header />
+      <Brands />
       <WhatGPT3 />
       <Features />
       <Possibility />
       <Blog />
       <Footer />
-    </>
+    </div>
   );
 };

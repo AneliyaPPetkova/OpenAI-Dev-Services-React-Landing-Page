@@ -1,0 +1,22 @@
+@use "./../variables.scss" as var;
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        min-width: 120px;
+        margin: 0.5rem;
+
+        img {
+            height: 24.15px;
+        }
+    }
+}
