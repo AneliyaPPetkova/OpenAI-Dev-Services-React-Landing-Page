@@ -1,0 +1,182 @@
+@use "./../variables.scss" as var;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 6rem;
+
+    &__content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 5rem;
+        font-family: var.$font-family;
+        font-style: normal;
+
+        h1 {
+            font-weight: 800;
+            font-size: 62px;
+            line-height: 75px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: var.$color-text;
+
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        margin: 2rem 0 1rem;
+        display: flex;
+
+        input,
+        button {
+            font-family: var.$font-family;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 27px;
+            padding: 0 1rem;
+            min-height: 50px;
+        }
+
+        input {
+            flex: 2;
+            width: 100%;
+            background: var.$color-input;
+            border-radius: 5px 0px 0px 5px;
+            font-weight: 400;
+
+            color: var.$color-input-text;
+            border: 2px solid var.$color-input;
+            outline: none;
+        }
+
+        button {
+            flex: 0.6;
+            width: 100%;
+            background: var.$color-red-orange;
+            border-radius: 0px 5px 5px 0px;
+            border: 2px solid var.$color-red-orange;
+            color: var.$color-white;
+            cursor: pointer;
+        }
+    }
+
+    &__people {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: var.$font-family;
+        font-style: normal;
+
+        img {
+            width: 181.79px;
+            height: 38px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 38px;
+            color: var.$color-white;
+            margin: 0 0 0 1rem;
+            padding: 0;
+        }
+    }
+
+    &__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        flex-direction: column;
+
+        &__content {
+            margin: 0 0 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+
+        &__content {
+            margin: 0 0 3rem;
+
+            h1 {
+                font-size: 48px;
+                line-height: 60px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__input {
+
+            input,
+            button {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__people {
+            flex-direction: column;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        flex-direction: column;
+        padding: 0 2rem;
+
+        &__content {
+            margin: 0 0 3rem;
+
+            h1 {
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        &__input {
+
+            input,
+            button {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
