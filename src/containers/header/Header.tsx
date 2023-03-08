@@ -1,4 +1,4 @@
-import { NavBar, Brand } from "../../components";
+import { NavBar } from "../../components";
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
 
