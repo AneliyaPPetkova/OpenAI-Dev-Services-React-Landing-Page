@@ -4,8 +4,7 @@ import {
   Blog,
   Features,
   Footer,
-  Possibility,
-  WhatGPT3,
+  AboutGPT3,
 } from "../containers";
 
 export const Home = () => {
@@ -13,9 +12,8 @@ export const Home = () => {
     <div className="gradient__bg">
       <Header />
       <Brands />
-      <WhatGPT3 />
+      <AboutGPT3 />
       <Features />
-      <Possibility />
       <Blog />
       <Footer />
     </div>

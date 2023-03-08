@@ -1,0 +1,13 @@
+@use "./../variables.scss" as var;
+
+.about-gpt3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1B78DE;
+filter: blur(100px);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
