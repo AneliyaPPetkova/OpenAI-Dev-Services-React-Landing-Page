@@ -9,7 +9,7 @@ import {
 
 export const Home = () => {
   return (
-    <div className="gradient__bg">
+    <div className="bg__gradient--primary">
       <Header />
       <Brands />
       <AboutGPT3 />
