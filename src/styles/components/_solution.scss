@@ -7,4 +7,15 @@
     align-self: flex-start;
     margin: 3rem 3rem 0 0;
     min-width: 210px;
+
+    &__title {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 38px;
+                height: 3px;
+
+                background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+            }
+    }
 }
