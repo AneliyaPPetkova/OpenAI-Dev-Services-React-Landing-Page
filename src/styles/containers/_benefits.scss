@@ -1,0 +1,83 @@
+@use "./../variables.scss" as var;
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+
+    &__title-container,
+    &__items-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start;
+        width: 100%;
+
+        div {
+            flex: 1;
+        }
+
+        .solution {
+            flex-direction: row;
+            max-width: 100%;
+
+            &__title {
+                h3 {
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.04em;
+                }
+            }
+        }
+    }
+
+    &__title {
+        max-width: 430px;
+
+        h2 {
+            font-family: var.$font-family;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .benefits {
+        flex-direction: column;
+        margin-top: initial;
+
+        &__items-container {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .benefits {
+        flex-direction: column;
+        margin-top: initial;
+
+        &__items-container {
+            .solution {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 0rem;
+            }
+        }
+
+        &__title {
+            h2 {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+}

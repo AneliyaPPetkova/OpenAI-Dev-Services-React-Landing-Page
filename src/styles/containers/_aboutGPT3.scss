@@ -78,9 +78,10 @@
             margin: 0rem;
         }
 
-        &__title {
-            align-self: center;
-            text-align: center;
+        &__link {
+            text-align: end;
+            align-self: flex-start;
+            cursor: pointer;
         }
     }
 }

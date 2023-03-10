@@ -2,9 +2,9 @@ import {
   Header,
   Brands,
   Blog,
-  Features,
   Footer,
   AboutGPT3,
+  Benefits,
 } from "../containers";
 
 export const Home = () => {
@@ -13,7 +13,7 @@ export const Home = () => {
       <Header />
       <Brands />
       <AboutGPT3 />
-      <Features />
+      <Benefits />
       <Blog />
       <Footer />
     </div>
