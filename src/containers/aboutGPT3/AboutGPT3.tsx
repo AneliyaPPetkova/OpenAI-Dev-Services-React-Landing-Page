@@ -28,7 +28,7 @@ const AboutGPT3 = () => {
         </div>
         <div className="about-gpt3__link text--orange">Explore The Library</div>
       </div>
-      <div id="possibility" className="about-gpt3__solutions-container">
+      <div className="about-gpt3__solutions-container">
         {solutions.map((solution: SolutionItem) => {
           return <Solution key={solution.id} solution={solution} />;
         })}

@@ -1,0 +1,102 @@
+@use "./../variables.scss" as var;
+
+.possibilities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+        img {
+            max-width: 600px;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: var.$font-family;
+        font-style: normal;
+    }
+
+    &__title {
+        min-width: 300px;
+        max-width: 480px;
+
+        h2 {
+            font-family: var.$font-family;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+
+    &__text {
+        min-width: 300px;
+        max-width: 480px;
+    }
+
+    &__link {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .possibilities {
+        &__image {
+            img {
+                min-width: 200px;
+                max-width: 350px;
+            }
+        }
+
+        &__title {
+            min-width: 200px;
+            max-width: 350px;
+
+            h2 {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+
+        &__text {
+            min-width: 250px;
+            max-width: 400px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .possibilities {
+        flex-direction: column;
+
+        &__image {
+            justify-content: flex-start;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__content {
+            margin-top: 2rem;
+        }
+
+        &__title,
+        &__text {
+            max-width: 100%;
+        }
+    }
+}

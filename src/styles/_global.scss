@@ -59,6 +59,15 @@
         color: var.$color-text;
     }
 
+    &--light-blue {
+        font-family: var.$font-family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: var.$color-light-blue;
+    }
+
     &--orange {
         font-family: var.$font-family;
         font-style: normal;

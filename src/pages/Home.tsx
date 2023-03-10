@@ -5,6 +5,7 @@ import {
   Footer,
   AboutGPT3,
   Benefits,
+  Possibilities,
 } from "../containers";
 
 export const Home = () => {
@@ -14,6 +15,7 @@ export const Home = () => {
       <Brands />
       <AboutGPT3 />
       <Benefits />
+      <Possibilities />
       <Blog />
       <Footer />
     </div>
