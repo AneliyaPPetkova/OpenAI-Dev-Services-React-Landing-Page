@@ -2,7 +2,7 @@ import possibilities from "../../assets/possibilities.png";
 
 const Possibilities = () => {
   return (
-    <div id="possibilities" className="possibilities section__margin">
+    <div id="possibilities" className="possibilities section__padding">
       <div className="possibilities__image">
         <img
           src={possibilities}

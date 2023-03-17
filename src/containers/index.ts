@@ -4,4 +4,5 @@ export { default as AboutGPT3 } from "./aboutGPT3/AboutGPT3";
 export { default as Blog } from "./blog/Blog";
 export { default as Benefits } from "./benefits/Benefits";
 export { default as Possibilities } from "./possibilities/Possibilities";
+export { default as CTA } from "./cta/CTA"
 export { default as Footer } from "./footer/Footer";
