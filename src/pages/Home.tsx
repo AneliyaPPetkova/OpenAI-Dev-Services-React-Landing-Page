@@ -6,20 +6,22 @@ import {
   AboutGPT3,
   Benefits,
   Possibilities,
-  CTA
+  CTA,
 } from "../containers";
 
 export const Home = () => {
   return (
     <div className="bg__gradient--primary">
-      <Header />
-      <Brands />
-      <AboutGPT3 />
-      <Benefits />
-      <Possibilities />
-      <CTA />
-      <Blog />
-      <Footer />
+      <div className="container--xl">
+        <Header />
+        <Brands />
+        <AboutGPT3 />
+        <Benefits />
+        <Possibilities />
+        <CTA />
+        <Blog />
+        <Footer />
+      </div>
     </div>
   );
 };

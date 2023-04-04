@@ -26,7 +26,9 @@ const Header = () => {
           </div>
         </div>
         <div className="header__image">
-          <img src={ai} alt="Header image showing a representation of AI" />
+          <div className="image__container">
+            <img src={ai} alt="Header image showing a representation of AI" />
+          </div>
         </div>
       </div>
     </>
