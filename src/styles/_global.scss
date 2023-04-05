@@ -16,6 +16,10 @@
 }
 
 .bg {
+    &__main {
+        background-color: var.$color-footer;
+    }
+
     &__gradient {
         &--primary {
             /* ff 3.6+ */
@@ -122,6 +126,32 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    &--bold {
+        font-family: var.$font-family;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    &--title {
+        font-size: 62px;
+        line-height: 75px;
+        letter-spacing: -0.04em;
+    }
+
+    &--small {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &--smallest {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &--center {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -132,6 +162,13 @@
 
         &__margin {
             margin: 4rem;
+        }
+    }
+
+    .text {
+        &--title {
+            font-size: 45px;
+            line-height: 50px;
         }
     }
 }

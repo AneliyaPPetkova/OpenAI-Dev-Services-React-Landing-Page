@@ -5,9 +5,9 @@ import { NavList, NavListItem } from "../../data/types";
 const Footer = () => {
   return (
     <div className="footer section__padding">
-      <div className="footer__heading">
+      <div className="footer__heading section__margin">
         <div className="footer__title">
-          <h2 className="text--gradient">
+          <h2 className="text--title text--gradient text--bold text--center">
             Do you want to step in to the future before others
           </h2>
         </div>
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="footer__content">
         <div className="footer__logo">
           <img src={logo} alt="logo" />
-          <div className="text--sub text--white">
+          <div className="text--smallest text--white">
             Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
           </div>
         </div>
@@ -29,8 +29,8 @@ const Footer = () => {
             const { id, title, items } = navList;
             return (
               <div key={id} className="nav__list text--white">
-                <div className="list__title">{title}</div>
-                <ul>
+                <div className="list__title text--small">{title}</div>
+                <ul className="text--smallest">
                   {items.map((item: NavListItem) => {
                     const { id, title, link } = item;
                     return (
@@ -45,7 +45,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="footer__copyright text--white">
+      <div className="footer__copyright text--white text--center text--smallest">
         © 2021 GPT-3. All rights reserved.
       </div>
     </div>

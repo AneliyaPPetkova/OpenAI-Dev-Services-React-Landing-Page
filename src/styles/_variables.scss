@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('src/assets/fonts/Gilroy-Medium.eot');
+	src: url('src/assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+		url('src/assets/fonts/Gilroy-Medium.woff') format('woff'),
+		url('src/assets/fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('src/assets/fonts/Gilroy-Bold.eot');
+	src: url('src/assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+		url('src/assets/fonts/Gilroy-Bold.woff') format('woff'),
+		url('src/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 $font-family: 'Manrope', sans-serif;
+$font-family-secondary: 'Gilroy-Medium', sans-serif;
+$font-family-secondary--bold: 'Gilroy-Bold', sans-serif;
 
 $gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
 $gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
