@@ -1,4 +1,6 @@
 import logo from "../../assets/logo.svg";
+import footerNav from "../../data/footerNav";
+import { NavList, NavListItem } from "../../data/types";
 
 const Footer = () => {
   return (
@@ -23,15 +25,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__nav">
-          <div className="nav__list text--white">
-            <div className="list__title">Links</div>
-            <ul>
-              <li>Overons</li>
-              <li>Social Media</li>
-              <li>Counters</li>
-              <li>Contact</li>
-            </ul>
-          </div>
+          {footerNav.map((navList: NavList) => {
+            const { id, title, items } = navList;
+            return (
+              <div key={id} className="nav__list text--white">
+                <div className="list__title">{title}</div>
+                <ul>
+                  {items.map((item: NavListItem) => {
+                    const { id, title, link } = item;
+                    return (
+                      <li key={id}>
+                        <a href={link}>{title}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="footer__copyright text--white">

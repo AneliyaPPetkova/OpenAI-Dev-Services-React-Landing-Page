@@ -1,4 +1,6 @@
-const footerNav = [
+import { NavList } from "./types";
+
+const footerNav: NavList[] = [
   {
     id: 1,
     title: "Links",
@@ -43,7 +45,7 @@ const footerNav = [
         id: 23,
         title: "Contact",
         link: "#",
-      }
+      },
     ],
   },
   {
@@ -64,7 +66,7 @@ const footerNav = [
         id: 33,
         title: "info@payme.net",
         link: "#",
-      }
+      },
     ],
   },
 ];

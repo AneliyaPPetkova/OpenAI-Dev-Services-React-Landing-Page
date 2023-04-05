@@ -3,3 +3,15 @@ export interface SolutionItem {
   title: string;
   info: string;
 }
+
+export interface NavList {
+  id: number;
+  title: string;
+  items: NavListItem[];
+}
+
+export interface NavListItem {
+  id: number;
+  title: string;
+  link: string;
+}
