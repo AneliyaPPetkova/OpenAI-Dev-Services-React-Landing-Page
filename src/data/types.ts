@@ -15,3 +15,12 @@ export interface NavListItem {
   title: string;
   link: string;
 }
+
+export interface Article {
+  id: number;
+  title: string;
+  link: string;
+  imageUrl: string;
+  publishedAt: string;
+  isFeatured: boolean;
+}
