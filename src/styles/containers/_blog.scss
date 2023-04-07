@@ -1,11 +1,18 @@
 @use "./../variables.scss" as var;
 
 .blog {
+    padding: 5rem 0;
+
+    &__title {
+        h2 {
+            margin: 0 0 7rem;
+        }
+    }
+
     &__articles {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 6rem 0;
         flex-wrap: wrap;
     }
 
@@ -21,6 +28,49 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 2rem;
 
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .blog {
+        .articles {
+            &__featured {
+                flex: 0.55;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blog {
+        padding: 2rem 0;
+
+        &__title {
+            h2 {
+                margin: 0 0 4rem;
+            }
+        }
+
+        &__articles {
+            flex-direction: column;
+        }
+
+        .articles {
+            &__featured {
+                margin: 0 0 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .blog {
+        .articles {
+            &__list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 }
