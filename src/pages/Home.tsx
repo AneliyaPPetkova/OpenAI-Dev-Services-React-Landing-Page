@@ -11,7 +11,7 @@ import {
 
 export const Home = () => {
   return (
-    <div className="bg__main">
+    <div>
       <div className="bg__gradient--primary">
         <div className="container--xl">
           <Header />

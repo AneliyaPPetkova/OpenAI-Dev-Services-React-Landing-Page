@@ -3,6 +3,7 @@
 @use "_animations.scss";
 @use "components/navbar";
 @use "components/solution";
+@use "components/article";
 
 @use "containers/header";
 @use "containers/brands";
@@ -10,6 +11,7 @@
 @use "containers/benefits";
 @use "containers/possibilities";
 @use "containers/cta";
+@use "containers/blog";
 @use "containers/footer";
 
 

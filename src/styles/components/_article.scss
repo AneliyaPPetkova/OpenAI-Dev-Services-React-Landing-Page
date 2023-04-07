@@ -1,1 +1,30 @@
-@use "_variables.scss" as var;
+@use "./../variables.scss" as var;
+
+.article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    &__image {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        background-color: var.$color-blog;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
