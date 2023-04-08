@@ -1,44 +1,14 @@
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
-
-const Menu = () => {
-  return (
-    <>
-      <p>
-        <a href="#home">Home</a>
-      </p>
-      <p>
-        <a href="#wgpt3">What is GPT3?</a>
-      </p>
-      <p>
-        <a href="#benefits">Benefits</a>
-      </p>
-      <p>
-        <a href="#possibilities">Posibilities</a>
-      </p>
-      <p>
-        <a href="#blog">Blog</a>
-      </p>
-    </>
-  );
-};
-
-const Sign = () => {
-  return (
-    <div className="nav-bar__sign">
-      <button className="nav-bar__sign--in text--normal text--white text--big">Sign in</button>
-      <button className="nav-bar__sign--up text--normal text--white text--big">Sign up</button>
-    </div>
-  );
-};
+import { Menu } from "./Menu";
+import { Sign } from "./Sign";
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const openMenu = (shouldOpen: boolean) => {
-    setToggleMenu(shouldOpen);
-  };
+  const toggle = () => setToggleMenu(!toggleMenu);
+
   return (
     <div className="nav-bar">
       <div className="nav-bar__links">
@@ -52,9 +22,9 @@ const NavBar = () => {
       <Sign />
       <div className="nav-bar__menu">
         {toggleMenu ? (
-          <RiCloseLine onClick={() => openMenu(false)} />
+          <RiCloseLine onClick={toggle} />
         ) : (
-          <RiMenu3Line onClick={() => openMenu(true)} />
+          <RiMenu3Line onClick={toggle} />
         )}
         {toggleMenu && (
           <div className="nav-bar__menu-container scale-up-center">
