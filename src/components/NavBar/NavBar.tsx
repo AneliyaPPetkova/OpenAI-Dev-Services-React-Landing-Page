@@ -27,8 +27,8 @@ const Menu = () => {
 const Sign = () => {
   return (
     <div className="nav-bar__sign">
-      <button className="nav-bar__sign--in">Sign in</button>
-      <button className="nav-bar__sign--up">Sign up</button>
+      <button className="nav-bar__sign--in text--normal text--white text--big">Sign in</button>
+      <button className="nav-bar__sign--up text--normal text--white text--big">Sign up</button>
     </div>
   );
 };
@@ -45,7 +45,7 @@ const NavBar = () => {
         <div className="nav-bar__logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="nav-bar__links-container">
+        <div className="nav-bar__links-container text--normal text--white text--big">
           <Menu />
         </div>
       </div>
@@ -58,7 +58,7 @@ const NavBar = () => {
         )}
         {toggleMenu && (
           <div className="nav-bar__menu-container scale-up-center">
-            <div className="nav-bar__menu-links">
+            <div className="nav-bar__menu-links text--normal">
               <Menu />
             </div>
             <Sign />

@@ -2,7 +2,7 @@
 
 .container {
     &--xl {
-        max-width: 1280px;
+        max-width: 1170px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -39,11 +39,11 @@
         }
 
         &--secondary {
-            background: rgb(15,65,119);
-            background: -moz-linear-gradient(150deg, rgba(15,65,119,1) 0%, rgba(4,44,84,1) 17%, rgba(4,44,84,1) 41%, rgba(7,53,100,1) 77%, rgba(14,76,143,1) 90%, rgba(25,115,213,1) 100%);
-            background: -webkit-linear-gradient(150deg, rgba(15,65,119,1) 0%, rgba(4,44,84,1) 17%, rgba(4,44,84,1) 41%, rgba(7,53,100,1) 77%, rgba(14,76,143,1) 90%, rgba(25,115,213,1) 100%);
-            background: linear-gradient(150deg, rgba(15,65,119,1) 0%, rgba(4,44,84,1) 17%, rgba(4,44,84,1) 41%, rgba(7,53,100,1) 77%, rgba(14,76,143,1) 90%, rgba(25,115,213,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f4177",endColorstr="#1973d5",GradientType=1);
+            background: rgb(15, 65, 119);
+            background: -moz-linear-gradient(150deg, rgba(15, 65, 119, 1) 0%, rgba(4, 44, 84, 1) 17%, rgba(4, 44, 84, 1) 41%, rgba(7, 53, 100, 1) 77%, rgba(14, 76, 143, 1) 90%, rgba(25, 115, 213, 1) 100%);
+            background: -webkit-linear-gradient(150deg, rgba(15, 65, 119, 1) 0%, rgba(4, 44, 84, 1) 17%, rgba(4, 44, 84, 1) 41%, rgba(7, 53, 100, 1) 77%, rgba(14, 76, 143, 1) 90%, rgba(25, 115, 213, 1) 100%);
+            background: linear-gradient(150deg, rgba(15, 65, 119, 1) 0%, rgba(4, 44, 84, 1) 17%, rgba(4, 44, 84, 1) 41%, rgba(7, 53, 100, 1) 77%, rgba(14, 76, 143, 1) 90%, rgba(25, 115, 213, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f4177", endColorstr="#1973d5", GradientType=1);
         }
     }
 }
@@ -87,8 +87,6 @@
     }
 
     &--white {
-        font-family: var.$font-family;
-        font-style: normal;
         color: var.$color-white;
     }
 
@@ -123,10 +121,21 @@
         font-weight: 800;
     }
 
+    &--normal {
+        font-family: var.$font-family;
+        font-style: normal;
+        font-weight: 500;
+    }
+
     &--title {
         font-size: 62px;
         line-height: 75px;
         letter-spacing: -0.04em;
+    }
+
+    &--big {
+        font-size: 18px;
+        line-height: 25px;
     }
 
     &--small {
@@ -141,6 +150,14 @@
 
     &--center {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        &--xl {
+            margin: 0 4rem;
+        }
     }
 }
 
@@ -164,6 +181,12 @@
 }
 
 @media screen and (max-width: 550px) {
+    .container {
+        &--xl {
+            margin: 0 2rem;
+        }
+    }
+
     .section {
         &__padding {
             padding: 4rem 2rem;

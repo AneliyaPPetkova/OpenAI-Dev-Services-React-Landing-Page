@@ -4,19 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem 0;
+    padding: 3.4375rem 0;
 
-    p,
-    button {
-        color: var.$color-white;
-        font-family: var.$font-family;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
+    p {
         text-transform: capitalize;
-        margin: 0 1rem;
         cursor: pointer;
-        border: none;
+        padding-right: 1.625rem;
     }
 
     &__links {
@@ -24,16 +17,17 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        text-align: center;
 
         &-container {
             display: flex;
             flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
         }
     }
 
     &__logo {
-        margin-right: 2rem;
+        margin-right: 4.0625rem;
 
         img {
             width: 62.56px;
@@ -46,22 +40,29 @@
         justify-content: flex-end;
         align-items: center;
 
+        button {
+            text-transform: capitalize;
+            cursor: pointer;
+            border: none;
+        }
+
         &--in {
             background: transparent;
+            text-transform: capitalize;
+            padding-right: 1.625rem;
         }
 
         &--up {
-            width: 152px;
-            height: 58px;
+            width: 9.5rem;
+            height: 3.625rem;
             background: var.$color-red-orange;
-            color: var.$color-white;
             border-radius: 5px;
         }
     }
 
     &__menu {
         color: var.$color-white;
-        margin: 1rem;
+        margin-left: 1rem;
         display: none;
         position: relative;
 
@@ -108,14 +109,12 @@
 
 @media screen and (max-width: 700px) {
     .nav-bar {
-        padding: 2rem 4rem;
+        padding: 2rem 0;
     }
 }
 
 @media screen and (max-width: 550px) {
     .nav-bar {
-        padding: 2rem;
-
         &__sign {
             display: none;
         }
@@ -123,10 +122,12 @@
         &__menu {
             .nav-bar__sign {
                 display: flex;
-                padding-top: 2rem;
+                padding-top: 1rem;
+                width: 100%;
 
-                &--up, &--in {
-                    width: 80px;
+                &--up,
+                &--in {
+                    width: 50%;
                 }
             }
         }

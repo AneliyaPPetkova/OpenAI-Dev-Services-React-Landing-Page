@@ -22,8 +22,6 @@ export const Home = () => {
           <CTA />
           <Blog />
         </div>
-      </div>
-      <div className="container--xl">
         <Footer />
       </div>
     </div>
