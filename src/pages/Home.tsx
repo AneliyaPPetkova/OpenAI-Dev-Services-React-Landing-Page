@@ -1,3 +1,4 @@
+import { NavBar } from "../components";
 import {
   Header,
   Brands,
@@ -14,6 +15,7 @@ export const Home = () => {
     <div>
       <div className="bg__gradient--primary">
         <div className="container--xl">
+          <NavBar />
           <Header />
           <Brands />
           <AboutGPT3 />

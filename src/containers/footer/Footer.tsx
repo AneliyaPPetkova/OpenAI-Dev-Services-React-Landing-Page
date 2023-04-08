@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container--xl">
         <div className="footer__heading section__margin">
           <div className="footer__title">
-            <h2 className="text--title text--gradient text--bold text--center">
+            <h2 className="text--title text--gradient text--bolder text--center">
               Do you want to step in to the future before others
             </h2>
           </div>

@@ -2,7 +2,7 @@
 
 .container {
     &--xl {
-        max-width: 1170px;
+        max-width: 73.125rem;
         margin-right: auto;
         margin-left: auto;
     }
@@ -60,29 +60,14 @@
 
 .text {
     &--blue {
-        font-family: var.$font-family;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
         color: var.$color-text;
     }
 
     &--light-blue {
-        font-family: var.$font-family;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
         color: var.$color-light-blue;
     }
 
     &--orange {
-        font-family: var.$font-family;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
         color: var.$color-subtext;
     }
 
@@ -91,21 +76,11 @@
     }
 
     &--light-black {
-        font-family: var.$font-family;
-        font-style: normal;
         color: var.$color-light-black;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 30px;
     }
 
     &--black {
-        font-family: var.$font-family;
-        font-style: normal;
         color: var.$color-black;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 45px;
     }
 
     &--gradient {
@@ -115,10 +90,16 @@
         -webkit-text-fill-color: transparent;
     }
 
-    &--bold {
+    &--bolder {
         font-family: var.$font-family;
         font-style: normal;
         font-weight: 800;
+    }
+
+    &--bold {
+        font-family: var.$font-family;
+        font-style: normal;
+        font-weight: 700;
     }
 
     &--normal {
@@ -131,6 +112,11 @@
         font-size: 62px;
         line-height: 75px;
         letter-spacing: -0.04em;
+    }
+
+    &--bigger {
+        font-size: 20px;
+        line-height: 27px;
     }
 
     &--big {
@@ -153,10 +139,17 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 81.125rem) {
     .container {
         &--xl {
             margin: 0 4rem;
+        }
+    }
+
+    .text {
+        &--title {
+            font-size: 55px;
+            line-height: 65px;
         }
     }
 }
@@ -177,6 +170,21 @@
             font-size: 45px;
             line-height: 50px;
         }
+    
+        &--bigger {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    
+        &--big {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    
+        &--small {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 }
 
@@ -194,6 +202,23 @@
 
         &__margin {
             margin: 4rem 2rem;
+        }
+    }
+
+    .text {
+        &--title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    
+        &--bigger {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    
+        &--big {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }
