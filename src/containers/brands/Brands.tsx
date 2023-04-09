@@ -2,7 +2,7 @@ import { google, atlassian, dropbox, shopify, slack } from "./imports";
 
 const Brands = () => {
   return (
-    <div className="brand section__padding">
+    <div className="brand">
       <div>
         <img src={google} alt="Google logo" />
       </div>
