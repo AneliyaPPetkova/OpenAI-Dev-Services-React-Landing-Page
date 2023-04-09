@@ -12,14 +12,19 @@ const whatIsGPT3: SolutionItem = {
 };
 
 const AboutGPT3 = () => {
+  const renderedSolutions = solutions.map((solution: SolutionItem) => (
+    <Solution key={solution.id} solution={solution} />
+  ));
+
   return (
     <div
       id="wgpt3"
-      className="about-gpt3 bg__gradient--secondary section__margin section__padding"
+      className="about-gpt3 bg__gradient--secondary section__padding"
     >
       <div className="about-gpt3__info">
-        <Solution solution={whatIsGPT3} />;
+        <Solution solution={whatIsGPT3} />
       </div>
+
       <div className="about-gpt3__title-container">
         <div className="about-gpt3__title">
           <h2 className="text--gradient">
@@ -28,11 +33,8 @@ const AboutGPT3 = () => {
         </div>
         <div className="about-gpt3__link text--orange">Explore The Library</div>
       </div>
-      <div className="about-gpt3__solutions-container">
-        {solutions.map((solution: SolutionItem) => {
-          return <Solution key={solution.id} solution={solution} />;
-        })}
-      </div>
+
+      <div className="about-gpt3__solutions-container">{renderedSolutions}</div>
     </div>
   );
 };
