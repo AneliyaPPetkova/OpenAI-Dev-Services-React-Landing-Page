@@ -7,11 +7,15 @@
     &__content {
         flex: 1.3;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: column;
-        font-family: var.$font-family;
-        font-style: normal;
+
+        font: {
+            family: var.$font-family;
+            style: normal;
+        }
+
         margin: 6.4375rem 0;
 
         h1 {
@@ -34,40 +38,20 @@
             max-width: 24.5rem;
             height: 4.5625rem;
             background: var.$color-input;
-            border-radius: 0.3125rem 0px 0px 0.3125rem;
+            border-radius: 0.3125rem 0 0 0.3125rem;
             border: none;
             outline: none;
             padding: 0 2rem;
 
             &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
-                /* Firefox */
-                font-family: var.$font-family;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.25rem;
-                line-height: 1.6875rem;
-                color: var.$color-input-text;
-            }
-
-            &:-ms-input-placeholder {
-                /* Internet Explorer 10-11 */
-                font-family: var.$font-family;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.25rem;
-                line-height: 1.6875rem;
-                color: var.$color-input-text;
-            }
-
-            &::-ms-input-placeholder {
-                /* Microsoft Edge */
-                font-family: var.$font-family;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.25rem;
-                line-height: 1.6875rem;
-                color: var.$color-input-text;
+                font: {
+                    family: var.$font-family;
+                    style: normal;
+                    weight: 400;
+                    size: 1.25rem;
+                    line-height: 1.6875rem;
+                    color: var.$color-input-text;
+                }
             }
         }
 
@@ -75,7 +59,7 @@
             flex: 1;
             max-width: 10.875rem;
             background: var.$color-red-orange;
-            border-radius: 0px 5px 5px 0px;
+            border-radius: 0 5px 5px 0;
             border: none;
             cursor: pointer;
         }
@@ -106,10 +90,8 @@
             left: -1.875rem;
         }
     }
-}
 
-@media screen and (max-width: 65.625rem) {
-    .header {
+    @media screen and (max-width: 65.625rem) {
         flex-direction: column;
 
         &__content {
@@ -126,10 +108,8 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 43.75rem) {
-    .header {
+    @media screen and (max-width: 43.75rem) {
         flex-direction: column;
 
         &__content {
@@ -144,10 +124,8 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 34.375rem) {
-    .header {
+    @media screen and (max-width: 34.375rem) {
         flex-direction: column;
 
         &__input {
@@ -157,20 +135,6 @@
                 padding: 0 1rem;
 
                 &::placeholder {
-                    /* Chrome, Firefox, Opera, Safari 10.1+ */
-                    /* Firefox */
-                    font-size: 1rem;
-                    line-height: 1.375;
-                }
-
-                &:-ms-input-placeholder {
-                    /* Internet Explorer 10-11 */
-                    font-size: 1rem;
-                    line-height: 1.375;
-                }
-
-                &::-ms-input-placeholder {
-                    /* Microsoft Edge */
                     font-size: 1rem;
                     line-height: 1.375;
                 }
