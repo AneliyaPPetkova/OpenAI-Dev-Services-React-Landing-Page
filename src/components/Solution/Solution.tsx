@@ -9,10 +9,10 @@ const Solution = ({ solution }: SolutionProps) => {
 
   return (
     <div className="solution">
-      <div className="solution__title text--white">
+      <div className="solution__title text--biggest text--normal text--white">
         <h3>{title}</h3>
       </div>
-      <div className="solution__text text--blue">{info}</div>
+      <div className="solution__text text--normal text--blue">{info}</div>
     </div>
   );
 };

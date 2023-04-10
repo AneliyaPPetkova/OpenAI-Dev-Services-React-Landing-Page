@@ -106,12 +106,23 @@
         font-family: var.$font-family;
         font-style: normal;
         font-weight: 500;
+        line-height: 1.875rem;
     }
 
     &--title {
         font-size: 62px;
         line-height: 75px;
         letter-spacing: -0.04em;
+    }
+
+    &--subtitle {
+        font-size: 2.125rem;
+        line-height: 2.8125rem;
+    }
+
+    &--biggest {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
     }
 
     &--bigger {
@@ -166,21 +177,36 @@
     }
 
     .text {
+        &--normal {
+            font-size: 0.875rem;
+            line-height: 1.5625rem;
+        }
+
         &--title {
             font-size: 45px;
             line-height: 50px;
         }
-    
+
+        &--subtitle {
+            font-size: 2rem;
+            line-height: 2.45rem;
+        }
+
+        &--biggest {
+            font-size: 1.375rem;
+            line-height: 1.75rem;
+        }
+
         &--bigger {
             font-size: 18px;
             line-height: 25px;
         }
-    
+
         &--big {
             font-size: 16px;
             line-height: 22px;
         }
-    
+
         &--small {
             font-size: 12px;
             line-height: 14px;
@@ -188,7 +214,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
     .container {
         &--xl {
             margin: 0 2rem;
@@ -210,12 +236,22 @@
             font-size: 40px;
             line-height: 45px;
         }
-    
+
+        &--subtitle {
+            font-size: 1.75rem;
+            line-height: 2rem;
+        }
+
+        &--biggest {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+
         &--bigger {
             font-size: 16px;
             line-height: 22px;
         }
-    
+
         &--big {
             font-size: 14px;
             line-height: 20px;
