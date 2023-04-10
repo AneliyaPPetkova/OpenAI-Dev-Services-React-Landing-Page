@@ -9,8 +9,8 @@ const Solution = ({ solution }: SolutionProps) => {
 
   return (
     <div className="solution">
-      <div className="solution__title text--biggest text--normal text--white">
-        <h3>{title}</h3>
+      <div className="solution__title">
+        <h3 className="text--biggest text--normal text--white">{title}</h3>
       </div>
       <div className="solution__text text--normal text--blue">{info}</div>
     </div>

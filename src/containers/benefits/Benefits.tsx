@@ -10,15 +10,15 @@ const Benefits = () => {
   };
 
   return (
-    <div id="benefits" className="benefits section__margin">
+    <div id="benefits" className="benefits">
       <div className="benefits__title-container">
         <div className="benefits__title">
-          <h2 className="text--gradient">
+          <h2 className="text--subtitle text--bolder text--gradient">
             The Future is Now and You Just Need To Realize It. Step into Future
             Today & Make it Happen.
           </h2>
         </div>
-        <div className="benefits__link text--orange">
+        <div className="benefits__link text--normal text--orange">
           Request Early Access to Get Started
         </div>
       </div>
