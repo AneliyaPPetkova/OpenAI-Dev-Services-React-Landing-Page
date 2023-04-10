@@ -1,15 +1,15 @@
 const CTA = () => {
   return (
-    <div id="cta" className="cta section__margin">
+    <div id="cta" className="cta">
       <div className="cta__title">
-        <div className="cta__strapline text--light-black">
+        <div className="cta__strapline text--normal text--smallest text--light-black">
           Request Early Access to Get Started
         </div>
-        <h3 className="text--black">
+        <h3 className="text--biggest text--bolder text--black">
           Register today & start exploring the endless possiblities.
         </h3>
       </div>
-      <div className="cta__link text--white">
+      <div className="cta__link text--big text--bold text--white">
         <a href="#">Get Started</a>
       </div>
     </div>
