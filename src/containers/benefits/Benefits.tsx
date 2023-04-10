@@ -3,6 +3,12 @@ import benefits from "../../data/benefits";
 import { SolutionItem } from "../../data/types";
 
 const Benefits = () => {
+  const renderBenefits = () => {
+    return benefits.map((benefit: SolutionItem) => (
+      <Solution key={benefit.id} solution={benefit} />
+    ));
+  };
+
   return (
     <div id="benefits" className="benefits section__margin">
       <div className="benefits__title-container">
@@ -16,11 +22,7 @@ const Benefits = () => {
           Request Early Access to Get Started
         </div>
       </div>
-      <div className="benefits__items-container">
-        {benefits.map((benefit: SolutionItem) => {
-          return <Solution key={benefit.id} solution={benefit} />;
-        })}
-      </div>
+      <div className="benefits__items-container">{renderBenefits()}</div>
     </div>
   );
 };
