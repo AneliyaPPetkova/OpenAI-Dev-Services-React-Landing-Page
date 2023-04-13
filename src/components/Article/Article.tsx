@@ -14,10 +14,10 @@ const Article = ({ articleItem }: ArticleProps) => {
       </div>
       <div className="article__content text--white">
         <div className="article__title">
-          <div className="article__date text--smallest">{publishedAt}</div>
-          <h3>{title}</h3>
+          <div className="article__date text--normal text--smallest">{publishedAt}</div>
+          <h3 className="text--biggest text--bolder">{title}</h3>
         </div>
-        <div className="article__link text--smallest">Read Full Article</div>
+        <div className="article__link text--normal text--smallest">Read Full Article</div>
       </div>
     </div>
   );

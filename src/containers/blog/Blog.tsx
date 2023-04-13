@@ -12,7 +12,7 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="blog section__margin">
+    <section id="blog" className="blog">
       <div className="blog__title">
         <h2 className="text--gradient text--title">
           A lot is happening, <br />
@@ -22,12 +22,12 @@ const Blog = () => {
       <div className="blog__articles">
         <div className="articles__featured">
           {featuredArticles().map((item: ArticleType) => {
-            return <Article articleItem={item} />;
+            return <Article key={item.id} articleItem={item} />;
           })}
         </div>
         <div className="articles__list">
           {articles().map((item: ArticleType) => {
-            return <Article articleItem={item} />;
+            return <Article key={item.id} articleItem={item} />;
           })}
         </div>
       </div>

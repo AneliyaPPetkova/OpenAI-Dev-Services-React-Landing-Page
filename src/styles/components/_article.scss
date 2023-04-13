@@ -19,6 +19,10 @@
         }
     }
 
+    &__title h3 {
+        font-size: 1.5625rem;
+    }
+
     &__content {
         flex: 1;
         background-color: var.$color-blog;
@@ -30,5 +34,11 @@
 
     &__link {
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 65.625rem) {
+        &__title h3 {
+            font-size: 1.4rem;
+        }
     }
 }

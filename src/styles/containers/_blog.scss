@@ -1,11 +1,11 @@
 @use "./../variables.scss" as var;
 
 .blog {
-    padding: 5rem 0;
+    margin: 9.625rem 0;
 
     &__title {
         h2 {
-            margin: 0 0 7rem;
+            margin: 0 0 7.1875rem;
         }
     }
 
@@ -32,8 +32,16 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 65.625rem) {
     .blog {
+        margin: 4rem 0;
+
+        &__title {
+            h2 {
+                margin: 0 0 4rem;
+            }
+        }
+
         .articles {
             &__featured {
                 flex: 0.55;
@@ -44,8 +52,6 @@
 
 @media screen and (max-width: 800px) {
     .blog {
-        padding: 2rem 0;
-
         &__title {
             h2 {
                 margin: 0 0 4rem;
