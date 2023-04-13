@@ -10,7 +10,7 @@ const NavBar = () => {
   const toggle = () => setToggleMenu(!toggleMenu);
 
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar" role="navigation" aria-label="Navigation">
       <div className="nav-bar__links">
         <div className="nav-bar__logo">
           <img src={logo} alt="logo" />
@@ -20,7 +20,7 @@ const NavBar = () => {
         </div>
       </div>
       <Sign />
-      <div className="nav-bar__menu">
+      <div className="nav-bar__menu" aria-haspopup="true" aria-expanded={toggleMenu}>
         {toggleMenu ? (
           <RiCloseLine onClick={toggle} />
         ) : (
