@@ -14,10 +14,7 @@ const AboutGPT3 = () => {
   ));
 
   return (
-    <div
-      id="wgpt3"
-      className="about-gpt3 bg__gradient--secondary"
-    >
+    <section id="wgpt3" className="about-gpt3 bg__gradient--secondary">
       <div className="about-gpt3__info">
         <Solution solution={whatIsGPT3} />
       </div>
@@ -34,7 +31,7 @@ const AboutGPT3 = () => {
       </div>
 
       <div className="about-gpt3__solutions-container">{renderedSolutions}</div>
-    </div>
+    </section>
   );
 };
 

@@ -12,7 +12,7 @@ const Blog = () => {
   };
 
   return (
-    <div id="blog" className="blog section__margin">
+    <section id="blog" className="blog section__margin">
       <div className="blog__title">
         <h2 className="text--gradient text--title">
           A lot is happening, <br />
@@ -31,7 +31,7 @@ const Blog = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

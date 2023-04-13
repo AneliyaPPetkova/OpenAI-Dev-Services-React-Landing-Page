@@ -2,7 +2,7 @@ import { google, atlassian, dropbox, shopify, slack } from "./imports";
 
 const Brands = () => {
   return (
-    <div className="brand">
+    <section className="brand">
       <div>
         <img src={google} alt="Google logo" />
       </div>
@@ -18,7 +18,7 @@ const Brands = () => {
       <div>
         <img src={shopify} alt="Shopify logo" />
       </div>
-    </div>
+    </section>
   );
 };
 

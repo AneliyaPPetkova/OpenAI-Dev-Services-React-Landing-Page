@@ -10,7 +10,7 @@ const Benefits = () => {
   };
 
   return (
-    <div id="benefits" className="benefits">
+    <section id="benefits" className="benefits">
       <div className="benefits__title-container">
         <div className="benefits__title">
           <h2 className="text--subtitle text--bolder text--gradient">
@@ -23,7 +23,7 @@ const Benefits = () => {
         </div>
       </div>
       <div className="benefits__items-container">{renderBenefits()}</div>
-    </div>
+    </section>
   );
 };
 

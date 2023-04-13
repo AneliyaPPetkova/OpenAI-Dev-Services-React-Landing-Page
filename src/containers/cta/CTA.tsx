@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <div id="cta" className="cta">
+    <section id="cta" className="cta">
       <div className="cta__title">
         <div className="cta__strapline text--normal text--smallest text--light-black">
           Request Early Access to Get Started
@@ -12,7 +12,7 @@ const CTA = () => {
       <div className="cta__link text--big text--bold text--white">
         <a href="#">Get Started</a>
       </div>
-    </div>
+    </section>
   );
 };
 

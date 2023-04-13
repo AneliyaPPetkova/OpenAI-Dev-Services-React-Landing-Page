@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header id="home" className="header section-padding">
+    <section id="home" className="header section-padding">
       <div className="header__content">
         <h1 className="text--title text--gradient">
           Let's Build Something amazing with GPT-3 OpenAI
@@ -49,7 +49,7 @@ const Header = () => {
           <img src={aiImg} alt="Header image showing a representation of AI" />
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 
