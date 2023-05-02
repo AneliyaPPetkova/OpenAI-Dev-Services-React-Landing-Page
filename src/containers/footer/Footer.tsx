@@ -5,7 +5,7 @@ import { NavList, NavListItem } from "../../data/types";
 const Footer = () => {
   return (
     <>
-      <section className="footer__heading section__margin">
+      <section className="footer__heading">
         <div className="footer__title">
           <h2 className="text--title text--gradient text--bolder text--center">
             Do you want to step in to the future before others
