@@ -7,7 +7,7 @@ This repository contains the code for a modern landing page built with React.js,
 
 | Desktop | Tablet | Mobile |
 | ----------- | ----------- | ----------- |
-| ![Modern UI/UX GPT-3 Desktop view](/desktop.png) | ![Modern UI/UX GPT-3 Desktop view](/tablet.png) | ![Modern UI/UX GPT-3 Desktop view](/mobile.png) |
+| ![Modern UI/UX GPT-3 Desktop view](https://aneliyappetkova.github.io/OpenAI-Dev-Services-React-Landing-Page/desktop.png) | ![Modern UI/UX GPT-3 Desktop view](https://aneliyappetkova.github.io/OpenAI-Dev-Services-React-Landing-Page/tablet.png) | ![Modern UI/UX GPT-3 Desktop view](https://aneliyappetkova.github.io/OpenAI-Dev-Services-React-Landing-Page/mobile.png) |
 
 ## Design
 
